@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello {{ name }}</title>
+     <link rel="stylesheet" href="/static/css/style.css">
+
+  </head>
+  <body>
+    <h1>Hello {{ name }}</h1>
+    <p>Hello {{ name }} , Hobbies {{hobbies}}</p>
+    {% for hobby in hobbies %}
+        <h1>{{hobby}}</h1>
+    {% endfor %}
+  </body>
+</html>
